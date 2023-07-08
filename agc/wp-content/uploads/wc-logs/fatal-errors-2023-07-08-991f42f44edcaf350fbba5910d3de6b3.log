@@ -1,0 +1,213 @@
+2023-07-08T10:51:24+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "display_custom_product_column" not found or invalid function name in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#1 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\xampppp\htdocs\agc\wp-admin\includes\class-wp-posts-list-table.php(1369): do_action('manage_product_...', 'thumb', 14)
+#3 D:\xampppp\htdocs\agc\wp-admin\includes\class-wp-list-table.php(1559): WP_Posts_List_Table->column_default(Object(WP_Post), 'thumb')
+#4 D:\xampppp\htdocs\agc\wp-admin\includes\class-wp-posts-list-table.php(1403): WP_List_Table->single_row_columns(Object(WP_Post))
+#5 D:\xampppp\htdocs\agc\wp-admin\includes\class-wp-posts-list-table.php(813): WP_Posts_List_Table->single_row(Object(WP_Post), 0)
+#6 D:\xampppp\htdocs\agc\wp-admin\includes\class-wp-posts-list-table.php(789): WP_Posts_List_Table->_display_rows(Array, 0)
+#7 D:\xampppp\htdocs\agc\wp-admin\includes\class-wp-list-table.php(1471): WP_Posts_List_Table->display_rows()
+#8 D:\xampppp\htdocs\agc\wp-admin\includes\class-wp-list-table.php(1398): WP_List_Table->display_rows_or_placeholder()
+#9 D:\xampppp\htdocs\agc\wp-admin\edit.php(487): WP_List_Table->display()
+#10 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308
+
+2023-07-08T10:56:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function save_quick_edit_fields(), 1 passed in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php:46
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): save_quick_edit_fields(Object(WC_Product_Simple))
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(471): do_action('woocommerce_pro...', Object(WC_Product_Simple))
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(348): WC_Admin_Post_Types->quick_edit_save(14, Object(WC_Product_Simple))
+#5 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): WC_Admin_Post_Types->bulk_and_quick_edit_save_post(14, Object(WP_Post))
+#6 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(314): do_action('woocommerce_pro...', 14, Object(WP_Post))
+#9 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Post_Types->bulk_and_quick_edit_hook(14, Object(WP_Post))
+#10 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 14, Object(WP_Post), true)
+#13 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#14 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#15 D:\xampppp\htdocs\agc\wp-admin\includes\ajax-actions.php(2117): edit_post()
+#16 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): wp_ajax_inline_save('')
+#17 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#18 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 D:\xampppp\htdocs\agc\wp-admin\admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#20 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php on line 46
+
+2023-07-08T10:58:39+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function save_quick_edit_fields(), 1 passed in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php:97
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): save_quick_edit_fields(Object(WC_Product_Simple))
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(471): do_action('woocommerce_pro...', Object(WC_Product_Simple))
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(348): WC_Admin_Post_Types->quick_edit_save(14, Object(WC_Product_Simple))
+#5 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): WC_Admin_Post_Types->bulk_and_quick_edit_save_post(14, Object(WP_Post))
+#6 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(314): do_action('woocommerce_pro...', 14, Object(WP_Post))
+#9 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Post_Types->bulk_and_quick_edit_hook(14, Object(WP_Post))
+#10 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 14, Object(WP_Post), true)
+#13 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#14 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#15 D:\xampppp\htdocs\agc\wp-admin\includes\ajax-actions.php(2117): edit_post()
+#16 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): wp_ajax_inline_save('')
+#17 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#18 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 D:\xampppp\htdocs\agc\wp-admin\admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#20 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php on line 97
+
+2023-07-08T11:00:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function save_quick_edit_fields(), 1 passed in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php:95
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): save_quick_edit_fields(Object(WC_Product_Simple))
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(471): do_action('woocommerce_pro...', Object(WC_Product_Simple))
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(348): WC_Admin_Post_Types->quick_edit_save(14, Object(WC_Product_Simple))
+#5 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): WC_Admin_Post_Types->bulk_and_quick_edit_save_post(14, Object(WP_Post))
+#6 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(314): do_action('woocommerce_pro...', 14, Object(WP_Post))
+#9 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Post_Types->bulk_and_quick_edit_hook(14, Object(WP_Post))
+#10 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 14, Object(WP_Post), true)
+#13 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#14 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#15 D:\xampppp\htdocs\agc\wp-admin\includes\ajax-actions.php(2117): edit_post()
+#16 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): wp_ajax_inline_save('')
+#17 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#18 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 D:\xampppp\htdocs\agc\wp-admin\admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#20 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php on line 95
+
+2023-07-08T11:07:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function save_quick_bulk_edit_fields(), 1 passed in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php:67
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): save_quick_bulk_edit_fields(Object(WC_Product_Simple))
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(471): do_action('woocommerce_pro...', Object(WC_Product_Simple))
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(348): WC_Admin_Post_Types->quick_edit_save(14, Object(WC_Product_Simple))
+#5 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): WC_Admin_Post_Types->bulk_and_quick_edit_save_post(14, Object(WP_Post))
+#6 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(314): do_action('woocommerce_pro...', 14, Object(WP_Post))
+#9 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Post_Types->bulk_and_quick_edit_hook(14, Object(WP_Post))
+#10 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 14, Object(WP_Post), true)
+#13 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#14 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#15 D:\xampppp\htdocs\agc\wp-admin\includes\ajax-actions.php(2117): edit_post()
+#16 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): wp_ajax_inline_save('')
+#17 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#18 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 D:\xampppp\htdocs\agc\wp-admin\admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#20 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php on line 67
+
+2023-07-08T11:07:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function save_quick_bulk_edit_fields(), 1 passed in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php:67
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): save_quick_bulk_edit_fields(Object(WC_Product_Simple))
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(471): do_action('woocommerce_pro...', Object(WC_Product_Simple))
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(348): WC_Admin_Post_Types->quick_edit_save(14, Object(WC_Product_Simple))
+#5 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): WC_Admin_Post_Types->bulk_and_quick_edit_save_post(14, Object(WP_Post))
+#6 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(314): do_action('woocommerce_pro...', 14, Object(WP_Post))
+#9 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Post_Types->bulk_and_quick_edit_hook(14, Object(WP_Post))
+#10 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 14, Object(WP_Post), true)
+#13 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#14 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#15 D:\xampppp\htdocs\agc\wp-admin\includes\ajax-actions.php(2117): edit_post()
+#16 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): wp_ajax_inline_save('')
+#17 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#18 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 D:\xampppp\htdocs\agc\wp-admin\admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#20 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php on line 67
+
+2023-07-08T11:09:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function save_quick_bulk_edit_fields(), 1 passed in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php:67
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): save_quick_bulk_edit_fields(Object(WC_Product_Simple))
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(471): do_action('woocommerce_pro...', Object(WC_Product_Simple))
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(348): WC_Admin_Post_Types->quick_edit_save(14, Object(WC_Product_Simple))
+#5 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): WC_Admin_Post_Types->bulk_and_quick_edit_save_post(14, Object(WP_Post))
+#6 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(314): do_action('woocommerce_pro...', 14, Object(WP_Post))
+#9 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Post_Types->bulk_and_quick_edit_hook(14, Object(WP_Post))
+#10 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 14, Object(WP_Post), true)
+#13 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#14 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#15 D:\xampppp\htdocs\agc\wp-admin\includes\ajax-actions.php(2117): edit_post()
+#16 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): wp_ajax_inline_save('')
+#17 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#18 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 D:\xampppp\htdocs\agc\wp-admin\admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#20 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php on line 67
+
+2023-07-08T11:11:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function save_quick_bulk_edit_fields(), 1 passed in D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php:73
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): save_quick_bulk_edit_fields(Object(WC_Product_Simple))
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(471): do_action('woocommerce_pro...', Object(WC_Product_Simple))
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(348): WC_Admin_Post_Types->quick_edit_save(14, Object(WC_Product_Simple))
+#5 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): WC_Admin_Post_Types->bulk_and_quick_edit_save_post(14, Object(WP_Post))
+#6 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php(314): do_action('woocommerce_pro...', 14, Object(WP_Post))
+#9 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Post_Types->bulk_and_quick_edit_hook(14, Object(WP_Post))
+#10 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 14, Object(WP_Post), true)
+#13 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#14 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#15 D:\xampppp\htdocs\agc\wp-admin\includes\ajax-actions.php(2117): edit_post()
+#16 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(308): wp_ajax_inline_save('')
+#17 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#18 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 D:\xampppp\htdocs\agc\wp-admin\admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#20 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\themes\agc\functions.php on line 73
+
+2023-07-08T14:14:48+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::remove_order_notes_with_meta_key() in D:\xampppp\htdocs\agc\wp-content\plugins\AGC cheque payments\agc-payment-gateway.php:168
+Stack trace:
+#0 D:\xampppp\htdocs\agc\wp-content\plugins\AGC cheque payments\agc-payment-gateway.php(184): WC_Gateway_agc_cheque->add_order_note_on_completion(47)
+#1 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): wc_agc_cheque_add_order_note_on_completion(47)
+#2 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\class-wc-order.php(387): do_action('woocommerce_ord...', 47, Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#5 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\class-wc-order.php(245): WC_Order->status_transition()
+#6 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-order-data.php(699): WC_Order->save()
+#7 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Meta_Box_Order_Data::save(47)
+#8 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#9 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 D:\xampppp\htdocs\agc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-meta-boxes.php(258): do_action('woocommerce_pro...', 47, Object(WP_Post))
+#11 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes(47, Object(WP_Post))
+#12 D:\xampppp\htdocs\agc\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#13 D:\xampppp\htdocs\agc\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#14 D:\xampppp\htdocs\agc\wp-includes\post.php(4715): do_action('save_post', 47, Object(WP_Post), true)
+#15 D:\xampppp\htdocs\agc\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#16 D:\xampppp\htdocs\agc\wp-admin\includes\post.php(439): wp_update_post(Array)
+#17 D:\xampppp\htdocs\agc\wp-admin\post.php(227): edit_post()
+#18 {main}
+  thrown in D:\xampppp\htdocs\agc\wp-content\plugins\AGC cheque payments\agc-payment-gateway.php on line 168
+
